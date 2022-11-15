@@ -1,0 +1,173 @@
+/*---MAIN INDEX---*/
+@import "../base/variables";
+
+main {
+    grid-area: main;
+
+    .emergencias {
+        position: fixed;
+        background-color: nth($colores, 10);
+        border-radius: 20px;
+        width: 200px;
+        right: 3%;
+        bottom: 20%;
+        text-align: center;
+        padding: 0px;
+        margin: 0%;
+        z-index: 1;
+
+        img {
+            padding: 0px;
+            margin-top: 0px;
+        }
+
+        a {
+            color: nth($colores, 2);
+            padding-right: 10px;
+            margin-bottom: 20px;
+            font-size: small;
+        }
+    }
+
+    .hero {
+        .carousel-inner {
+            .d-block {
+                @include dimension (400px, 700px)
+            }
+
+            h5 {
+                font-family: $fuente;
+                color: nth($colores, 5);
+            }
+
+            p {
+                font-family: $fuente;
+                color: nth($colores, 5)
+            }
+        }
+    }
+
+    .cu {
+        @extend %flex;
+        background-color: nth($colores, 3);
+        border-top: nth($colores, 1) solid;
+        @include dimension (100%, auto);
+        margin: 0;
+
+        .consejos {
+            display: flex;
+            margin-left: 10px;
+            text-align: center;
+            font-family: $fuente;
+            color: nth($colores, 1);
+
+            h2 {
+                font-size: medium;
+            }
+
+            p {
+                font-size: medium;
+            }
+        }
+
+        .tarjetas-de-consejos {
+            @extend %flex;
+            margin-left: 20px;
+
+
+            .card {
+                background-color: nth($colores, 6);
+                text-align: center;
+                margin: 20px;
+                border: 1px solid nth($colores, 7);
+                @include dimension (200px, 350px);
+                border-radius: 15px;
+                overflow: scroll;
+
+                h3 {
+                    margin-bottom: 0;
+                    font-family: $fuente;
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px 0 10px 0;
+                    font-size: medium;
+                    font-weight: bold;
+                }
+
+                img {
+                    border-radius: 30%;
+                    margin: 0 45px 0 45px;
+                    @include dimension (100px, 100px);
+                }
+
+                p {
+                    margin: 0;
+                    padding: 5px;
+                    font-family: $fuente;
+                    width: 100%;
+                    text-align: center;
+                    font-size: smaller;
+                    color: nth($colores, 7);
+                }
+
+            }
+        }
+
+        iframe {
+            @extend %flex;
+            margin-right: 20px;
+            margin-left: 40px;
+        }
+    }
+
+    .mapa {
+        background-color: nth($colores, 3);
+        @include dimension (100%, 650px);
+        border-top: nth($colores, 1) solid;
+        color: nth($colores, 1);
+        font-family: $fuente;
+        font-size: large;
+        text-align: center;
+
+        h2 {
+            font-size: x-large;
+        }
+
+        h3 {
+            font-size: x-large;
+        }
+    }
+
+    .consultorios {
+        background-color: nth($colores, 3);
+        border-top: nth($colores, 1) solid;
+        color: nth($colores, 1);
+        @include dimension (100%, auto);
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+
+        div {
+            h2 {
+                font-family: $fuente;
+                font-size: x-large;
+                text-align: center;
+            }
+
+            h3 {
+                font-family: $fuente;
+                font-size: large;
+                text-align: center;
+            }
+        }
+
+        div {
+            img {
+                width: 500px;
+                height: 500px;
+                margin: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+/*---MAIN NOSOTROS---*/
+@import "../base/variables";
+
+.mainNosotros {
+    background-image: url(../img/fondo__nosotros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include dimension (100%, 100%);
+    padding-bottom: 50px;
+    grid-area: main;
+
+    .quienes-somos {
+        color: nth($colores, 1);
+        text-align: center;
+    }
+
+    section {
+        .contenedorDeDr {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            .fila {
+                .dr {
+                    background-color: nth($colores, 1);
+                    @include dimension (250px, 100%);
+                    @extend %flex;
+                    flex-direction: column;
+                    border: solid 1px nth($colores, 7);
+                    padding: 0%;
+                    margin: 20px;
+                    flex: 0;
+                    transition: 0.5s;
+
+                    img {
+                        @include dimension (250px, 250px);
+                        justify-content: center;
+                        align-items: center;
+                        border-bottom: solid 2px nth($colores, 7);
+                    }
+
+                    h3 {
+                        font-family: $fuente;
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px 0 10px 0;
+                        margin-bottom: 0;
+                        color: nth($colores, 1);
+                        background-color: rgba(0, 0, 33, 44);
+                        font-size: large;
+                        font-weight: bold;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+}

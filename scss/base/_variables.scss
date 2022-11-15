@@ -1,0 +1,47 @@
+
+$fuente: 
+'Preahvihear', sans-serif;
+
+
+//!LISTAS
+$colores:
+white,
+red,
+#021023,
+#E5446D,
+wheat,
+#d9ee49,
+black,
+#000021,
+gray,
+gainsboro,
+darkgrey,
+pink,
+orange;
+
+//!MAPAS
+
+$formularios:(
+    bg-formulario:rgba(0, 0, 0, 4),
+    padding-formulario: 10px 20px,
+    margin-formulario: auto,
+    margintop-formulario: 60px,
+    redondeo-formulario: 7px,
+    posicion-formulario: relative,
+);
+
+
+//!EXTENDS
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//!MIXINS
+@mixin dimension ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

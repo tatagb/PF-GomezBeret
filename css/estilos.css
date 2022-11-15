@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+.fila {
+  justify-content: center;
+  padding: 0;
+  margin: 20px; }
+
+/*----HEADER----*/
+header div, header nav .navbar-collapse ul, main .cu, main .cu .tarjetas-de-consejos, main .cu iframe, .mainNosotros section .contenedorDeDr .fila .dr, footer .footer1, footer .footer2, footer .footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  background-image: url(../img/fondo__header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: "Preahvihear", sans-serif;
+  font-size: medium;
+  position: sticky;
+  grid-area: header; }
+  header div {
+    flex-direction: column; }
+    header div h1 {
+      font-size: xx-large;
+      font-weight: bold; }
+    header div h2 {
+      font-size: xx-large; }
+  header nav {
+    background-color: black; }
+    header nav .container-fluid {
+      color: white; }
+      header nav .container-fluid .navbar-toggler {
+        border: solid 1px white; }
+        header nav .container-fluid .navbar-toggler .navbar-toggler-icon {
+          background-image: url(../img/huesomenu.png); }
+    header nav .navbar-collapse {
+      color: white; }
+      header nav .navbar-collapse ul li {
+        display: inline-block;
+        color: white; }
+        header nav .navbar-collapse ul li .nav-link {
+          color: white; }
+          header nav .navbar-collapse ul li .nav-link:hover {
+            color: #E5446D; }
+
+/*---MAIN INDEX---*/
+header div, header nav .navbar-collapse ul, main .cu, main .cu .tarjetas-de-consejos, main .cu iframe, .mainNosotros section .contenedorDeDr .fila .dr, footer .footer1, footer .footer2, footer .footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main {
+  grid-area: main; }
+  main .emergencias {
+    position: fixed;
+    background-color: gainsboro;
+    border-radius: 20px;
+    width: 200px;
+    right: 3%;
+    bottom: 20%;
+    text-align: center;
+    padding: 0px;
+    margin: 0%;
+    z-index: 1; }
+    main .emergencias img {
+      padding: 0px;
+      margin-top: 0px; }
+    main .emergencias a {
+      color: red;
+      padding-right: 10px;
+      margin-bottom: 20px;
+      font-size: small; }
+  main .hero .carousel-inner .d-block {
+    width: 400px;
+    height: 700px; }
+  main .hero .carousel-inner h5 {
+    font-family: "Preahvihear", sans-serif;
+    color: wheat; }
+  main .hero .carousel-inner p {
+    font-family: "Preahvihear", sans-serif;
+    color: wheat; }
+  main .cu {
+    background-color: #021023;
+    border-top: white solid;
+    width: 100%;
+    height: auto;
+    margin: 0; }
+    main .cu .consejos {
+      display: flex;
+      margin-left: 10px;
+      text-align: center;
+      font-family: "Preahvihear", sans-serif;
+      color: white; }
+      main .cu .consejos h2 {
+        font-size: medium; }
+      main .cu .consejos p {
+        font-size: medium; }
+    main .cu .tarjetas-de-consejos {
+      margin-left: 20px; }
+      main .cu .tarjetas-de-consejos .card {
+        background-color: #d9ee49;
+        text-align: center;
+        margin: 20px;
+        border: 1px solid black;
+        width: 200px;
+        height: 350px;
+        border-radius: 15px;
+        overflow: scroll; }
+        main .cu .tarjetas-de-consejos .card h3 {
+          margin-bottom: 0;
+          font-family: "Preahvihear", sans-serif;
+          width: 100%;
+          text-align: center;
+          padding: 10px 0 10px 0;
+          font-size: medium;
+          font-weight: bold; }
+        main .cu .tarjetas-de-consejos .card img {
+          border-radius: 30%;
+          margin: 0 45px 0 45px;
+          width: 100px;
+          height: 100px; }
+        main .cu .tarjetas-de-consejos .card p {
+          margin: 0;
+          padding: 5px;
+          font-family: "Preahvihear", sans-serif;
+          width: 100%;
+          text-align: center;
+          font-size: smaller;
+          color: black; }
+    main .cu iframe {
+      margin-right: 20px;
+      margin-left: 40px; }
+  main .mapa {
+    background-color: #021023;
+    width: 100%;
+    height: 650px;
+    border-top: white solid;
+    color: white;
+    font-family: "Preahvihear", sans-serif;
+    font-size: large;
+    text-align: center; }
+    main .mapa h2 {
+      font-size: x-large; }
+    main .mapa h3 {
+      font-size: x-large; }
+  main .consultorios {
+    background-color: #021023;
+    border-top: white solid;
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center; }
+    main .consultorios div h2 {
+      font-family: "Preahvihear", sans-serif;
+      font-size: x-large;
+      text-align: center; }
+    main .consultorios div h3 {
+      font-family: "Preahvihear", sans-serif;
+      font-size: large;
+      text-align: center; }
+    main .consultorios div img {
+      width: 500px;
+      height: 500px;
+      margin: 20px; }
+
+/*---MAIN NOSOTROS---*/
+header div, header nav .navbar-collapse ul, main .cu, main .cu .tarjetas-de-consejos, main .cu iframe, .mainNosotros section .contenedorDeDr .fila .dr, footer .footer1, footer .footer2, footer .footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mainNosotros {
+  background-image: url(../img/fondo__nosotros.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  grid-area: main; }
+  .mainNosotros .quienes-somos {
+    color: white;
+    text-align: center; }
+  .mainNosotros section .contenedorDeDr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0; }
+    .mainNosotros section .contenedorDeDr .fila .dr {
+      background-color: white;
+      width: 250px;
+      height: 100%;
+      flex-direction: column;
+      border: solid 1px black;
+      padding: 0%;
+      margin: 20px;
+      flex: 0;
+      transition: 0.5s; }
+      .mainNosotros section .contenedorDeDr .fila .dr img {
+        width: 250px;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 2px black; }
+      .mainNosotros section .contenedorDeDr .fila .dr h3 {
+        font-family: "Preahvihear", sans-serif;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        margin-bottom: 0;
+        color: white;
+        background-color: #000021;
+        font-size: large;
+        font-weight: bold; }
+      .mainNosotros section .contenedorDeDr .fila .dr:hover {
+        transform: scale(1.1); }
+
+/*---MAIN SERVICIOS---*/
+header div, header nav .navbar-collapse ul, main .cu, main .cu .tarjetas-de-consejos, main .cu iframe, .mainNosotros section .contenedorDeDr .fila .dr, footer .footer1, footer .footer2, footer .footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mainServicios {
+  background-image: url(../img/fh.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  grid-area: main; }
+  .mainServicios .contenedorDeTarjetas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0; }
+    .mainServicios .contenedorDeTarjetas .fila .tarjeta {
+      background-color: white;
+      width: 250px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border: solid 1px black;
+      padding: 0%;
+      margin: 20px;
+      transition: 0.5s;
+      flex: 0; }
+      .mainServicios .contenedorDeTarjetas .fila .tarjeta img {
+        width: 250px;
+        height: 250px;
+        border-radius: 0 0 15px 15px;
+        justify-content: center; }
+      .mainServicios .contenedorDeTarjetas .fila .tarjeta h3 {
+        font-family: "Preahvihear", sans-serif;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        margin-bottom: 0;
+        font-size: large;
+        font-weight: bold;
+        color: black; }
+      .mainServicios .contenedorDeTarjetas .fila .tarjeta a {
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: 5px 10px 5px 10px;
+        font-family: "Preahvihear", sans-serif; }
+      .mainServicios .contenedorDeTarjetas .fila .tarjeta:hover {
+        transform: scale(1.1); }
+
+/*---MAIN PET SHOP---*/
+header div, header nav .navbar-collapse ul, main .cu, main .cu .tarjetas-de-consejos, main .cu iframe, .mainNosotros section .contenedorDeDr .fila .dr, footer .footer1, footer .footer2, footer .footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mainPetShop {
+  background-image: url(../img/fondo__petshop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  grid-area: main; }
+  .mainPetShop .contenedorDeProductos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0; }
+    .mainPetShop .contenedorDeProductos .fila .productos {
+      background-color: white;
+      width: 250px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border: solid 1px black;
+      padding: 0%;
+      margin: 20px;
+      transition: 0.5s;
+      flex: 0; }
+      .mainPetShop .contenedorDeProductos .fila .productos img {
+        width: 250px;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 2px black; }
+      .mainPetShop .contenedorDeProductos .fila .productos h3 {
+        font-family: "Preahvihear", sans-serif;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        margin-bottom: 0;
+        color: black;
+        background-color: rgba(0, 0, 0, 0.452);
+        font-size: large;
+        font-weight: bold; }
+      .mainPetShop .contenedorDeProductos .fila .productos a {
+        text-decoration: none;
+        font-family: "Preahvihear", sans-serif;
+        background-color: pink;
+        color: black;
+        padding: 5px 10px 5px 10px; }
+      .mainPetShop .contenedorDeProductos .fila .productos:hover {
+        transform: scale(1.1); }
+
+/*---MAIN CONTACTO---*/
+header div, header nav .navbar-collapse ul, main .cu, main .cu .tarjetas-de-consejos, main .cu iframe, .mainNosotros section .contenedorDeDr .fila .dr, footer .footer1, footer .footer2, footer .footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.principal {
+  background-image: url(../img/fondo__contacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding-top: 0;
+  margin: 0px;
+  grid-area: main; }
+  .principal .formulario {
+    display: flex;
+    flex-direction: column; }
+    .principal .formulario form {
+      width: 450px;
+      height: 470px;
+      margin: auto;
+      background: black;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      margin-top: 60px;
+      border-radius: 7px;
+      position: relative; }
+      .principal .formulario form h2 {
+        color: white;
+        text-align: center;
+        font-family: "Preahvihear", sans-serif;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px; }
+      .principal .formulario form input,
+      .principal .formulario form textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none; }
+      .principal .formulario form textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%; }
+      .principal .formulario form #boton {
+        background-color: darkgrey;
+        color: white;
+        padding: 20px; }
+
+/*----FOOTER----*/
+header div, header nav .navbar-collapse ul, main .cu, main .cu .tarjetas-de-consejos, main .cu iframe, .mainNosotros section .contenedorDeDr .fila .dr, footer .footer1, footer .footer2, footer .footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  grid-area: footer;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 100%; }
+  footer .footer1 {
+    background-color: gray;
+    background-position: center;
+    font-family: "Preahvihear", sans-serif;
+    text-size-adjust: 30px;
+    color: black;
+    border-top: white solid;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0; }
+  footer .footer2 {
+    background-color: gray;
+    background-position: center;
+    font-family: "Preahvihear", sans-serif;
+    text-size-adjust: 30px;
+    color: black;
+    flex-direction: column;
+    text-align: center; }
+    footer .footer2 h3 {
+      font-weight: bold;
+      font-size: medium; }
+    footer .footer2 h4 {
+      font-weight: bold;
+      font-size: small; }
+  footer .footer3 {
+    background-color: gray;
+    background-position: center;
+    color: black;
+    font-family: "Preahvihear", sans-serif;
+    text-size-adjust: 30px;
+    text-align: center; }
+
+/*MEDIA QUERY---*/
+@media screen and (min-width: 1400px) {
+  main .cu .consejos h2 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: x-large; }
+  main .cu .consejos p {
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: large; } }
+
+@media screen and (max-width: 1400px) {
+  main .cu .consejos {
+    justify-content: center;
+    align-items: center; }
+  main .cu .tarjetas-de-consejos {
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (max-width: 1255px) {
+  body .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas: "header header" "main main" "footer footer"; }
+    body .grid-container .section-consultorios .consultorios img {
+      display: flex;
+      flex-direction: column; } }
+
+@media screen and (max-width: 1255px) and (max-width: 1040px) {
+  section .mapa iframe {
+    border-radius: 100%;
+    width: 80%; } }
+
+@media screen and (max-width: 1255px) and (max-width: 768px) {
+  main .cu .consejos {
+    flex-direction: column; }
+    main .cu .consejos h2 {
+      font-size: large; }
+    main .cu .consejos p {
+      font-size: large; }
+  main .cu .tarjetas-de-consejos {
+    flex-direction: column; } }
+
+@media screen and (max-width: 1255px) and (max-width: 576px) {
+  .hero .carousel-inner .carousel-item img {
+    height: 500px; }
+  section .mapa h2 {
+    font-size: medium; }
+  section .mapa h3 {
+    font-size: medium; }
+  .section-consultorios .consultorios div img {
+    width: 400px; }
+  .section-consultorios .consultorios div h2 {
+    font-size: large; }
+  .section-consultorios .consultorios div h3 {
+    font-size: medium; } }
+
+@media screen and (max-width: 1255px) and (max-width: 500px) {
+  body .grid-container .section-consultorios .consultorios div img {
+    width: 300px;
+    border-radius: 100%; }
+  body .grid-container .section-consultorios .consultorios div h2 {
+    font-size: medium; }
+  body .grid-container .section-consultorios .consultorios div h3 {
+    font-size: small; } }
+
+@media screen and (max-width: 1255px) and (max-width: 470px) {
+  body .grid-container main .formulario form {
+    width: 300px; } }
+
+@media screen and (max-height: 530px) {
+  .principal {
+    height: 100%; } }
+
+@media screen and (max-width: 376px) {
+  body .grid-container header div h1 {
+    font-size: large; }
+  body .grid-container header div h2 {
+    font-size: large; }
+  body .grid-container .section-consultorios .consultorios div h2 {
+    font-size: small; }
+  body .grid-container .section-consultorios .consultorios div h3 {
+    font-size: x-small; } }

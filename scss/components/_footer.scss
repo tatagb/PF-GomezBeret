@@ -1,0 +1,53 @@
+/*----FOOTER----*/
+@import "../base/variables";
+
+footer {
+    grid-area: footer;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+
+    .footer1 {
+        background-color: nth($colores, 9);
+        background-position: center;
+        font-family: $fuente;
+        text-size-adjust: 30px;
+        color: nth($colores, 7);
+        border-top: nth($colores, 1) solid;
+        @extend %flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .footer2 {
+        background-color: nth($colores, 9);
+        background-position: center;
+        font-family: $fuente;
+        text-size-adjust: 30px;
+        color: nth($colores, 7);
+        @extend %flex;
+        flex-direction: column;
+        text-align: center;
+
+        h3 {
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        h4 {
+            font-weight: bold;
+            font-size: small;
+        }
+    }
+    
+    .footer3 {
+        background-color: nth($colores, 9);
+        background-position: center;
+        color: nth($colores, 7);
+        font-family: $fuente;
+        text-size-adjust: 30px;
+        @extend %flex;
+        text-align: center;
+    }
+}

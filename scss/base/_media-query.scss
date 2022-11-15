@@ -1,0 +1,217 @@
+/*MEDIA QUERY---*/
+
+@media screen and (min-width:1400px) {
+    main {
+        .cu {
+            .consejos {
+                h2 {
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    font-size: x-large;
+                }
+
+                p {
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    font-size: large
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+    main {
+        .cu {
+            .consejos {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .tarjetas-de-consejos {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1255px) {
+    body {
+        .grid-container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 0px 0px;
+            grid-template-areas:
+                "header header"
+                "main main"
+                "footer footer";
+
+            .section-consultorios {
+                .consultorios {
+                    img {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    @media screen and (max-width:1040px) {
+        section {
+            .mapa {
+                iframe {
+                    border-radius: 100%;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        main {
+            .cu {
+                .consejos {
+                    flex-direction: column;
+
+                    h2 {
+                        font-size: large;
+                    }
+
+                    p {
+                        font-size: large;
+                    }
+                }
+
+                .tarjetas-de-consejos {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        .hero {
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        height: 500px;
+                    }
+                }
+            }
+        }
+        section {
+            .mapa {
+                h2 {
+                    font-size: medium;
+                }
+
+                h3 {
+                    font-size: medium;
+                }
+            }
+        }
+
+        .section-consultorios {
+            .consultorios {
+                div {
+                    img {
+                        width: 400px;
+                    }
+
+                    h2 {
+                        font-size: large;
+                    }
+
+                    h3 {
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    @media screen and (max-width:500px) {
+        body {
+            .grid-container {
+                .section-consultorios {
+                    .consultorios {
+                        div {
+                            img {
+                                width: 300px;
+                                border-radius: 100%;
+                            }
+
+                            h2 {
+                                font-size: medium;
+                            }
+
+                            h3 {
+                                font-size: small;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width:470px) {
+        body {
+            .grid-container {
+                main {
+                    .formulario {
+                        form {
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height:530px) {
+    .principal {
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:376px) {
+    body {
+        .grid-container{
+            header {
+                div {
+                    h1 {
+                        font-size: large;
+                    }
+    
+                    h2 {
+                        font-size: large;
+                    }
+                }
+            }
+            .section-consultorios{
+                .consultorios{
+                    div{
+                        h2{
+                            font-size: small;
+                        }
+                        h3{
+                            font-size: x-small;
+                        }
+                    }
+                }
+            }
+        }
+        }
+        
+}

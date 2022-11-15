@@ -1,0 +1,60 @@
+/*---MAIN CONTACTO---*/
+@import "../base/variables";
+
+.principal {
+    background-image: url(../img/fondo__contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include dimension (100%, 100vh);
+    padding-top: 0;
+    margin: 0px;
+    grid-area: main;
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+
+        form {
+            @include dimension (450px, 470px);
+            margin: map-get($formularios, margin-formulario);
+            background: map-get($formularios, bg-formulario);
+            padding: map-get($formularios, padding-formulario);
+            box-sizing: border-box;
+            margin-top: map-get($formularios, margintop-formulario);
+            border-radius: map-get($formularios, redondeo-formulario);
+            position: map-get($formularios, posicion-formulario);
+
+            h2 {
+                color: nth($colores, 1);
+                text-align: center;
+                font-family: $fuente;
+                margin: 0;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 7px;
+                box-sizing: border-box;
+                font-size: 17px;
+                border: none;
+            }
+
+            textarea {
+                min-height: 100px;
+                max-height: 200px;
+                max-width: 100%;
+            }
+
+            #boton {
+                background-color: nth($colores, 11);
+                color: nth($colores, 1);
+                padding: 20px;
+            }
+
+        }
+    }
+}
